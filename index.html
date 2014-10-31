@@ -55,24 +55,6 @@
         margin-top: -.15rem;
       }
 
-      @media (max-width: 42rem) {
-        h2 {
-          float: none;
-          width: 100%;
-          text-align: left;
-          border-bottom: solid 1px #AAAAAA;
-          margin-bottom: 1rem;
-        }
-
-        section {
-          margin-left: 0;
-        }
-
-        #container {
-          margin-top: 3em;
-        }
-      }
-
       h3 {
         font-size:1.125rem;
         margin: 1.25rem 0 0;
@@ -96,7 +78,8 @@
 
       a {
         /*color: #0082ff;*/
-        color: #081420;
+        /*color: #081420;*/
+        color: #0074D9;
         text-decoration: none;
       }
 
@@ -107,6 +90,40 @@
       }
       ul.indent {
         margin-left: 2rem;
+      }
+
+      @media (max-width: 42rem) {
+        h2 {
+          float: none;
+          width: 100%;
+          text-align: left;
+          border-bottom: solid 1px #AAAAAA;
+          margin-bottom: 1rem;
+        }
+
+        section {
+          margin-left: 0;
+        }
+
+        #container {
+          margin-top: 3em;
+        }
+     }
+
+      @media (max-width: 900px) {
+        ul:not(.indent) {
+          list-style: square inside;
+        }
+      }
+
+ 
+      @media print {
+        * { color: #151515 !important; background-color: #fff !important }
+        #container {
+          margin: 1cm 1.5cm 1cm 1.5cm;
+          padding: 0;
+        }
+        .hide-on-print { display: none }
       }
 
     </style>
@@ -193,7 +210,7 @@
         <p>
           Reiff M, Bernhardt BA, Mulchandani S, Soucier D, Cornell D, Pyeritz RE, Spinner NB.
           &lsquo;What does it mean?&rsquo; Uncertainties in Understanding Results of Chromosomal Microarray Testing.
-          <em>Genetics in Medicine</em>. January, 2012.
+          <em>Genetics in Medicine</em>. February, 2012. <a class="hide-on-print" href="/Cornell-WhatDoesItMean.pdf">[pdf]</a>
         </p>
       </section>
 
